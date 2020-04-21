@@ -1,0 +1,14 @@
+{
+    "name": "fajlerabbi/circle-slider",
+    "description": "A circle slider plugin by owl-carousel",
+    "type": "wordpress-plugin",
+    "license": "GPLv2",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Circle\\Slider\\": "includes/"
+        },
+        "files": ["includes/functions.php"]
+    }
+}

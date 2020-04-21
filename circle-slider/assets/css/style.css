@@ -1,0 +1,156 @@
+/**
+ * @defgroup   STYLE style
+ *
+ * @brief      This file implements style.
+ *
+ * @author     Fajlerabbi
+ * @date       2020
+ */
+
+
+ /**
+  * CS owl slider active class style and action
+  */
+.cs-slider-wrap .owl-item {
+    display: flex;
+}
+
+.cs-slider-wrap .owl-item.active.center {
+    justify-content: center;
+}
+.cs-slider-wrap .owl-item.active.cloned {
+    justify-content: flex-start;
+}
+.cs-slider-wrap .owl-item.active {
+    justify-content: flex-end;
+}
+
+
+
+.cs-slider-wrap .owl-item.active.center {
+    justify-content: center;
+}
+.cs-slider-wrap .owl-item.active.cs-prev {
+    justify-content: flex-start;
+}
+.cs-slider-wrap .owl-item.active.cs-next {
+    justify-content: flex-end;
+}
+
+
+/**
+ * CS slider item style
+ */
+.cs-slider-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+    position: relative;
+    font-size: 18px;
+    color: #D5E9FE;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    line-height: 20px;
+    border: 2px solid #E49A62;
+}
+
+.cs-item-content {
+    display: none;
+    font-family: 'Lato';
+}
+.cs-slider-wrap .owl-item.active.center .cs-slider-item .cs-item-content{
+    display: block;
+}
+
+
+/**
+ * CS style responsive
+ */
+@media only screen and (max-width: 1250px) {
+    .cs-slider-item {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .cs-slider-item {
+        height: 130px;
+        width: 130px;
+    }
+    .cs-slider-item .cs-item-content {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 765px) {
+    .cs-slider-item {
+        height: 100px;
+        width: 100px;
+    }
+    .cs-slider-item .cs-item-content {
+        font-size: 12px;
+        line-height: 12px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .cs-slider-item {
+        height: 80px;
+        width: 80px;
+    }
+    .cs-slider-item .cs-item-content {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+
+    .cs-slider-wrap .owl-item .cs-slider-item {
+        z-index: -1;
+    }
+    .cs-slider-wrap .owl-item .cs-slider-item {
+        height: 60px;
+        width: 60px;
+        transition: .4s;
+    }
+    .cs-slider-wrap .owl-item.center .cs-slider-item {
+        transform: scale(2);
+        position: relative;
+        z-index: 999999999;
+        padding: 15px;
+    }
+    /*.cs-slider-wrap .owl-item.center {*/
+    /*    margin: 0 20px;*/
+    /*}*/
+    .cs-slider-wrap .owl-item {
+        padding: 40px 0;
+
+    }
+
+    .cs-slider-wrap .owl-item.center .cs-item-content {
+        font-size: 5px;
+        line-height: 10px;
+        display: block;
+    }
+
+    .cs-slider-wrap .owl-item .cs-item-content {
+        font-size: 7px;
+        line-height: 10px;
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 500px) {
+    .cs-slider-wrap .owl-item .cs-slider-item {
+        width: 70px;
+        height: 70px;
+    }
+}
